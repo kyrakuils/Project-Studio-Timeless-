@@ -130,24 +130,6 @@ body {
     font-weight: 500;
 }
 
-/* logo */
-
-.logo {
-    position: absolute;
-    bottom: -4px;
-    right: 20px;
-    color: #0e2431;
-    margin-right: -10px;
-}
-
-.logo img {
-    width: 170px;
-}
-
-.logo-nav {
-    margin-top: 70px;
-}
-
 /* hamburger-menu-icoon */
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
@@ -170,7 +152,25 @@ body {
     display: none;
 }
 
-/* homepage */
+/* logo navbar */
+
+.logo {
+    position: absolute;
+    bottom: -4px;
+    right: 20px;
+    color: #0e2431;
+    margin-right: -10px;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.logo-nav {
+    margin-top: 70px;
+}
+
+/* explore {index} */
 
 .explore-page {
     padding-top: 70px;
@@ -229,9 +229,7 @@ body {
     margin: 20px 20px 20px 20px;
 }
 
-/* review */
-
-/* slider */
+/* review, slider */
 
 @keyframes carousel {
     from {
@@ -359,14 +357,12 @@ body {
     margin-top: 10px;
 }
 
-/* favorites */
-
 .products-text {
     text-align: center;
     margin-bottom: 40px;
 }
 
-/* contact */
+/* contact, iconen */
 
 .contact-title {
     padding-top: 70px;
@@ -437,7 +433,7 @@ body {
 
 .container {
     position: relative;
-    width: 50%;
+    width:50%;
 }
 
 .image-visit {
@@ -448,22 +444,22 @@ body {
 
 .overlay {
     position: absolute;
-    bottom: 100%;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    height: 0;
+    height: 100%;
     width: 100%;
+    opacity: 0;
     transition: .5s ease;
     background-color: #d9d9d9;
 }
 
 .container:hover .overlay {
-    bottom: 0;
-    height: 100%;
+    opacity: 1;
 }
 
 .text {
-    margin-top: -30px;
     color: white;
     font-size: 15px;
     line-height: 20px;
@@ -504,7 +500,7 @@ body {
     color: black;
 }
 
-/* iconen */
+/* footer iconen */
 
 .row {
     display: flex;
